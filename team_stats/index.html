@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airball — Team Stats</title>
+    <link rel="stylesheet" href="/airball-pages/style.css">
+    <script src="/airball-pages/chart.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/airball-pages/">&#127936; Airball</a>
+            <span class="nav-subtitle">Basketball data &mdash; NBA + EuroLeague</span>
+        </div>
+        <div class="nav-links">
+            <a href="/airball-pages/" class="">Home</a>
+            
+            <a href="/airball-pages/scores" class="">Scores</a>
+            <a href="/airball-pages/team_stats" class="active">Team Stats</a>
+            
+            <a href="/airball-pages/predictions" class="nav-highlight ">Predictions</a>
+            <a href="/airball-pages/standings" class="">Standings</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+
+        <h1>Team Stats</h1>
+
+<div class="top-controls">
+    
+</div>
+
+<hr>
+
+<table class="games-table sortable">
+<thead>
+    <tr>
+        <th>League</th>
+        <th>Team</th>
+        <th>GP</th>
+        <th>W</th>
+        <th>L</th>
+        <th>Win%</th>
+        <th>PF</th>
+        <th>PA</th>
+        <th>Diff</th>
+        <th>FG%</th>
+        <th>3P%</th>
+        <th>FT%</th>
+        <th>REB</th>
+        <th>AST</th>
+        <th>TOV</th>
+        <th>STL</th>
+        <th>BLK</th>
+        <th>Pace</th>
+        <th>ORtg</th>
+        <th>DRtg</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" class="team-logo" width="18" height="18" alt="Los Angeles Lakers" loading="lazy"><strong>Los Angeles Lakers</strong></td>
+        <td>8</td>
+        <td>7</td>
+        <td>1</td>
+        <td>87.5</td>
+        <td>986</td>
+        <td>939</td>
+        <td>47</td>
+        <td>47.2</td>
+        <td>34.3</td>
+        <td>73.9</td>
+        <td>42.6</td>
+        <td>29.7</td>
+        <td>13.5</td>
+        <td>8.0</td>
+        <td>5.7</td>
+        <td>104.2</td>
+        <td>114.4</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/mem.png" class="team-logo" width="18" height="18" alt="Memphis Grizzlies" loading="lazy"><strong>Memphis Grizzlies</strong></td>
+        <td>8</td>
+        <td>7</td>
+        <td>1</td>
+        <td>87.5</td>
+        <td>985</td>
+        <td>880</td>
+        <td>105</td>
+        <td>42.4</td>
+        <td>34.1</td>
+        <td>74.3</td>
+        <td>45.4</td>
+        <td>24.6</td>
+        <td>16.1</td>
+        <td>6.9</td>
+        <td>4.6</td>
+        <td>102.0</td>
+        <td>105.5</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" class="team-logo" width="18" height="18" alt="Boston Celtics" loading="lazy"><strong>Boston Celtics</strong></td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td>85.7</td>
+        <td>820</td>
+        <td>703</td>
+        <td>117</td>
+        <td>45.7</td>
+        <td>38.2</td>
+        <td>77.4</td>
+        <td>44.9</td>
+        <td>27.1</td>
+        <td>13.7</td>
+        <td>8.4</td>
+        <td>4.7</td>
+        <td>98.2</td>
+        <td>116.9</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/den.png" class="team-logo" width="18" height="18" alt="Denver Nuggets" loading="lazy"><strong>Denver Nuggets</strong></td>
+        <td>5</td>
+        <td>4</td>
+        <td>1</td>
+        <td>80.0</td>
+        <td>582</td>
+        <td>561</td>
+        <td>21</td>
+        <td>46.5</td>
+        <td>36.0</td>
+        <td>78.8</td>
+        <td>44.3</td>
+        <td>27.9</td>
+        <td>13.2</td>
+        <td>9.5</td>
+        <td>6.2</td>
+        <td>100.6</td>
+        <td>114.5</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/phi.png" class="team-logo" width="18" height="18" alt="Philadelphia 76ers" loading="lazy"><strong>Philadelphia 76ers</strong></td>
+        <td>9</td>
+        <td>7</td>
+        <td>2</td>
+        <td>77.8</td>
+        <td>1000</td>
+        <td>989</td>
+        <td>11</td>
+        <td>45.5</td>
+        <td>34.3</td>
+        <td>76.7</td>
+        <td>39.7</td>
+        <td>25.2</td>
+        <td>16.2</td>
+        <td>7.8</td>
+        <td>3.5</td>
+        <td>103.0</td>
+        <td>105.0</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png" class="team-logo" width="18" height="18" alt="Olympiacos Piraeus" loading="lazy"><strong>Olympiacos Piraeus</strong></td>
+        <td>12</td>
+        <td>9</td>
+        <td>3</td>
+        <td>75.0</td>
+        <td>1070</td>
+        <td>983</td>
+        <td>87</td>
+        <td>49.1</td>
+        <td>33.1</td>
+        <td>77.0</td>
+        <td>36.7</td>
+        <td>19.8</td>
+        <td>13.1</td>
+        <td>7.0</td>
+        <td>2.6</td>
+        <td>72.2</td>
+        <td>118.9</td>
+        <td>109.1</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png" class="team-logo" width="18" height="18" alt="Valencia Basket" loading="lazy"><strong>Valencia Basket</strong></td>
+        <td>12</td>
+        <td>9</td>
+        <td>3</td>
+        <td>75.0</td>
+        <td>1136</td>
+        <td>1042</td>
+        <td>94</td>
+        <td>47.6</td>
+        <td>39.2</td>
+        <td>74.9</td>
+        <td>39.6</td>
+        <td>19.3</td>
+        <td>10.8</td>
+        <td>6.7</td>
+        <td>1.7</td>
+        <td>76.0</td>
+        <td>123.3</td>
+        <td>113.1</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/hou.png" class="team-logo" width="18" height="18" alt="Houston Rockets" loading="lazy"><strong>Houston Rockets</strong></td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>75.0</td>
+        <td>964</td>
+        <td>887</td>
+        <td>77</td>
+        <td>47.0</td>
+        <td>32.8</td>
+        <td>76.5</td>
+        <td>41.6</td>
+        <td>27.8</td>
+        <td>13.8</td>
+        <td>7.2</td>
+        <td>4.2</td>
+        <td>102.8</td>
+        <td>110.4</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" class="team-logo" width="18" height="18" alt="Minnesota Timberwolves" loading="lazy"><strong>Minnesota Timberwolves</strong></td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>75.0</td>
+        <td>937</td>
+        <td>841</td>
+        <td>96</td>
+        <td>44.2</td>
+        <td>36.0</td>
+        <td>80.3</td>
+        <td>47.5</td>
+        <td>26.6</td>
+        <td>13.1</td>
+        <td>7.2</td>
+        <td>4.1</td>
+        <td>97.5</td>
+        <td>112.3</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/okc.png" class="team-logo" width="18" height="18" alt="Oklahoma City Thunder" loading="lazy"><strong>Oklahoma City Thunder</strong></td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>75.0</td>
+        <td>897</td>
+        <td>796</td>
+        <td>101</td>
+        <td>46.8</td>
+        <td>36.6</td>
+        <td>76.4</td>
+        <td>40.1</td>
+        <td>27.2</td>
+        <td>13.5</td>
+        <td>8.0</td>
+        <td>4.2</td>
+        <td>101.5</td>
+        <td>112.9</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/sa.png" class="team-logo" width="18" height="18" alt="San Antonio Spurs" loading="lazy"><strong>San Antonio Spurs</strong></td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>75.0</td>
+        <td>939</td>
+        <td>846</td>
+        <td>93</td>
+        <td>45.8</td>
+        <td>31.5</td>
+        <td>79.9</td>
+        <td>41.7</td>
+        <td>23.9</td>
+        <td>13.7</td>
+        <td>7.7</td>
+        <td>5.5</td>
+        <td>101.6</td>
+        <td>109.6</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/1efae090-16e2-4963-ae47-4b94f249c244.png" class="team-logo" width="18" height="18" alt="Dubai Basketball" loading="lazy"><strong>Dubai Basketball</strong></td>
+        <td>12</td>
+        <td>8</td>
+        <td>4</td>
+        <td>66.7</td>
+        <td>1032</td>
+        <td>1017</td>
+        <td>15</td>
+        <td>47.8</td>
+        <td>36.3</td>
+        <td>79.9</td>
+        <td>36.6</td>
+        <td>18.2</td>
+        <td>12.0</td>
+        <td>4.6</td>
+        <td>2.8</td>
+        <td>71.8</td>
+        <td>118.9</td>
+        <td>117.9</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png" class="team-logo" width="18" height="18" alt="Zalgiris Kaunas" loading="lazy"><strong>Zalgiris Kaunas</strong></td>
+        <td>12</td>
+        <td>8</td>
+        <td>4</td>
+        <td>66.7</td>
+        <td>1059</td>
+        <td>1020</td>
+        <td>39</td>
+        <td>46.5</td>
+        <td>39.4</td>
+        <td>76.9</td>
+        <td>41.1</td>
+        <td>18.9</td>
+        <td>13.3</td>
+        <td>5.9</td>
+        <td>2.4</td>
+        <td>75.1</td>
+        <td>117.1</td>
+        <td>113.2</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/atl.png" class="team-logo" width="18" height="18" alt="Atlanta Hawks" loading="lazy"><strong>Atlanta Hawks</strong></td>
+        <td>9</td>
+        <td>6</td>
+        <td>3</td>
+        <td>66.7</td>
+        <td>1080</td>
+        <td>1043</td>
+        <td>37</td>
+        <td>45.1</td>
+        <td>33.8</td>
+        <td>75.9</td>
+        <td>44.9</td>
+        <td>30.9</td>
+        <td>15.1</td>
+        <td>10.4</td>
+        <td>3.9</td>
+        <td>105.7</td>
+        <td>110.7</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/det.png" class="team-logo" width="18" height="18" alt="Detroit Pistons" loading="lazy"><strong>Detroit Pistons</strong></td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>66.7</td>
+        <td>698</td>
+        <td>669</td>
+        <td>29</td>
+        <td>45.1</td>
+        <td>38.2</td>
+        <td>81.7</td>
+        <td>44.9</td>
+        <td>27.5</td>
+        <td>15.4</td>
+        <td>8.0</td>
+        <td>5.6</td>
+        <td>101.1</td>
+        <td>114.7</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png" class="team-logo" width="18" height="18" alt="Panathinaikos AKTOR Athens" loading="lazy"><strong>Panathinaikos AKTOR Athens</strong></td>
+        <td>12</td>
+        <td>8</td>
+        <td>4</td>
+        <td>66.7</td>
+        <td>1029</td>
+        <td>947</td>
+        <td>82</td>
+        <td>47.5</td>
+        <td>34.8</td>
+        <td>73.7</td>
+        <td>36.8</td>
+        <td>18.9</td>
+        <td>13.8</td>
+        <td>6.9</td>
+        <td>3.3</td>
+        <td>73.4</td>
+        <td>115.2</td>
+        <td>106.0</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png" class="team-logo" width="18" height="18" alt="Fenerbahce Tarfin Istanbul" loading="lazy"><strong>Fenerbahce Tarfin Istanbul</strong></td>
+        <td>12</td>
+        <td>8</td>
+        <td>4</td>
+        <td>66.7</td>
+        <td>1027</td>
+        <td>946</td>
+        <td>81</td>
+        <td>47.4</td>
+        <td>34.6</td>
+        <td>77.6</td>
+        <td>38.5</td>
+        <td>19.1</td>
+        <td>13.3</td>
+        <td>6.7</td>
+        <td>3.8</td>
+        <td>73.1</td>
+        <td>115.8</td>
+        <td>106.5</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png" class="team-logo" width="18" height="18" alt="FC Barcelona" loading="lazy"><strong>FC Barcelona</strong></td>
+        <td>12</td>
+        <td>8</td>
+        <td>4</td>
+        <td>66.7</td>
+        <td>1072</td>
+        <td>1050</td>
+        <td>22</td>
+        <td>48.6</td>
+        <td>36.8</td>
+        <td>74.1</td>
+        <td>35.9</td>
+        <td>17.3</td>
+        <td>13.0</td>
+        <td>6.4</td>
+        <td>2.5</td>
+        <td>74.3</td>
+        <td>119.1</td>
+        <td>116.7</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png" class="team-logo" width="18" height="18" alt="Crvena Zvezda Meridianbet Belgrade" loading="lazy"><strong>Crvena Zvezda Meridianbet Belgrade</strong></td>
+        <td>12</td>
+        <td>7</td>
+        <td>5</td>
+        <td>58.3</td>
+        <td>993</td>
+        <td>946</td>
+        <td>47</td>
+        <td>45.7</td>
+        <td>36.6</td>
+        <td>74.6</td>
+        <td>38.0</td>
+        <td>20.3</td>
+        <td>13.3</td>
+        <td>6.8</td>
+        <td>2.8</td>
+        <td>72.9</td>
+        <td>112.8</td>
+        <td>107.4</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png" class="team-logo" width="18" height="18" alt="Hapoel IBI Tel Aviv" loading="lazy"><strong>Hapoel IBI Tel Aviv</strong></td>
+        <td>12</td>
+        <td>7</td>
+        <td>5</td>
+        <td>58.3</td>
+        <td>1079</td>
+        <td>1041</td>
+        <td>38</td>
+        <td>49.3</td>
+        <td>38.1</td>
+        <td>79.7</td>
+        <td>35.3</td>
+        <td>16.6</td>
+        <td>10.4</td>
+        <td>6.0</td>
+        <td>2.9</td>
+        <td>75.1</td>
+        <td>120.6</td>
+        <td>116.5</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png" class="team-logo" width="18" height="18" alt="Real Madrid" loading="lazy"><strong>Real Madrid</strong></td>
+        <td>12</td>
+        <td>7</td>
+        <td>5</td>
+        <td>58.3</td>
+        <td>1162</td>
+        <td>1074</td>
+        <td>88</td>
+        <td>48.6</td>
+        <td>39.7</td>
+        <td>85.1</td>
+        <td>38.0</td>
+        <td>19.8</td>
+        <td>12.7</td>
+        <td>6.2</td>
+        <td>2.8</td>
+        <td>76.5</td>
+        <td>125.2</td>
+        <td>115.7</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/por.png" class="team-logo" width="18" height="18" alt="Portland Trail Blazers" loading="lazy"><strong>Portland Trail Blazers</strong></td>
+        <td>7</td>
+        <td>4</td>
+        <td>3</td>
+        <td>57.1</td>
+        <td>808</td>
+        <td>773</td>
+        <td>35</td>
+        <td>45.9</td>
+        <td>34.2</td>
+        <td>81.7</td>
+        <td>46.1</td>
+        <td>22.7</td>
+        <td>12.2</td>
+        <td>8.4</td>
+        <td>5.1</td>
+        <td>101.8</td>
+        <td>110.8</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/mia.png" class="team-logo" width="18" height="18" alt="Miami Heat" loading="lazy"><strong>Miami Heat</strong></td>
+        <td>7</td>
+        <td>4</td>
+        <td>3</td>
+        <td>57.1</td>
+        <td>856</td>
+        <td>845</td>
+        <td>11</td>
+        <td>47.0</td>
+        <td>37.0</td>
+        <td>67.8</td>
+        <td>48.6</td>
+        <td>25.4</td>
+        <td>15.4</td>
+        <td>8.9</td>
+        <td>5.1</td>
+        <td>103.4</td>
+        <td>113.0</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" class="team-logo" width="18" height="18" alt="Dallas Mavericks" loading="lazy"><strong>Dallas Mavericks</strong></td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>50.0</td>
+        <td>906</td>
+        <td>917</td>
+        <td>-11</td>
+        <td>48.6</td>
+        <td>34.5</td>
+        <td>79.4</td>
+        <td>41.7</td>
+        <td>27.2</td>
+        <td>12.9</td>
+        <td>8.8</td>
+        <td>4.4</td>
+        <td>99.3</td>
+        <td>114.9</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/cle.png" class="team-logo" width="18" height="18" alt="Cleveland Cavaliers" loading="lazy"><strong>Cleveland Cavaliers</strong></td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>50.0</td>
+        <td>942</td>
+        <td>914</td>
+        <td>28</td>
+        <td>46.0</td>
+        <td>33.5</td>
+        <td>78.6</td>
+        <td>43.3</td>
+        <td>26.1</td>
+        <td>15.1</td>
+        <td>8.6</td>
+        <td>5.6</td>
+        <td>102.1</td>
+        <td>110.9</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png" class="team-logo" width="18" height="18" alt="LA Clippers" loading="lazy"><strong>LA Clippers</strong></td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>50.0</td>
+        <td>917</td>
+        <td>920</td>
+        <td>-3</td>
+        <td>49.6</td>
+        <td>38.1</td>
+        <td>79.2</td>
+        <td>41.4</td>
+        <td>24.5</td>
+        <td>15.8</td>
+        <td>10.8</td>
+        <td>6.1</td>
+        <td>99.0</td>
+        <td>120.6</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/b05e3c54-e672-4b31-9f86-c91e9de7715c.png" class="team-logo" width="18" height="18" alt="Besiktas Istanbul" loading="lazy"><strong>Besiktas Istanbul</strong></td>
+        <td>12</td>
+        <td>6</td>
+        <td>6</td>
+        <td>50.0</td>
+        <td>1055</td>
+        <td>1079</td>
+        <td>-24</td>
+        <td>47.0</td>
+        <td>38.3</td>
+        <td>75.4</td>
+        <td>33.1</td>
+        <td>19.8</td>
+        <td>11.8</td>
+        <td>6.0</td>
+        <td>1.8</td>
+        <td>75.7</td>
+        <td>116.3</td>
+        <td>118.9</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/a033e5b3-0de7-48a3-98d9-d9a4b9df1f39.png" class="team-logo" width="18" height="18" alt="Paris Basketball" loading="lazy"><strong>Paris Basketball</strong></td>
+        <td>12</td>
+        <td>6</td>
+        <td>6</td>
+        <td>50.0</td>
+        <td>1090</td>
+        <td>1121</td>
+        <td>-31</td>
+        <td>46.9</td>
+        <td>34.4</td>
+        <td>72.4</td>
+        <td>36.4</td>
+        <td>19.3</td>
+        <td>14.1</td>
+        <td>8.8</td>
+        <td>3.0</td>
+        <td>77.6</td>
+        <td>115.7</td>
+        <td>119.1</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png" class="team-logo" width="18" height="18" alt="Partizan Mozzart Bet Belgrade" loading="lazy"><strong>Partizan Mozzart Bet Belgrade</strong></td>
+        <td>12</td>
+        <td>6</td>
+        <td>6</td>
+        <td>50.0</td>
+        <td>938</td>
+        <td>931</td>
+        <td>7</td>
+        <td>44.7</td>
+        <td>29.8</td>
+        <td>71.1</td>
+        <td>34.2</td>
+        <td>19.6</td>
+        <td>10.8</td>
+        <td>7.8</td>
+        <td>2.8</td>
+        <td>71.6</td>
+        <td>108.1</td>
+        <td>107.3</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/orl.png" class="team-logo" width="18" height="18" alt="Orlando Magic" loading="lazy"><strong>Orlando Magic</strong></td>
+        <td>7</td>
+        <td>3</td>
+        <td>4</td>
+        <td>42.9</td>
+        <td>773</td>
+        <td>796</td>
+        <td>-23</td>
+        <td>45.7</td>
+        <td>36.0</td>
+        <td>78.2</td>
+        <td>44.7</td>
+        <td>25.1</td>
+        <td>15.6</td>
+        <td>7.1</td>
+        <td>5.3</td>
+        <td>102.7</td>
+        <td>114.4</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png" class="team-logo" width="18" height="18" alt="Golden State Warriors" loading="lazy"><strong>Golden State Warriors</strong></td>
+        <td>7</td>
+        <td>3</td>
+        <td>4</td>
+        <td>42.9</td>
+        <td>782</td>
+        <td>818</td>
+        <td>-36</td>
+        <td>48.0</td>
+        <td>37.1</td>
+        <td>81.2</td>
+        <td>45.7</td>
+        <td>27.4</td>
+        <td>13.5</td>
+        <td>7.6</td>
+        <td>5.7</td>
+        <td>99.7</td>
+        <td>119.9</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" class="team-logo" width="18" height="18" alt="Chicago Bulls" loading="lazy"><strong>Chicago Bulls</strong></td>
+        <td>7</td>
+        <td>3</td>
+        <td>4</td>
+        <td>42.9</td>
+        <td>818</td>
+        <td>859</td>
+        <td>-41</td>
+        <td>47.5</td>
+        <td>36.7</td>
+        <td>75.6</td>
+        <td>45.9</td>
+        <td>27.5</td>
+        <td>13.4</td>
+        <td>7.5</td>
+        <td>5.2</td>
+        <td>102.3</td>
+        <td>115.9</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" class="team-logo" width="18" height="18" alt="Toronto Raptors" loading="lazy"><strong>Toronto Raptors</strong></td>
+        <td>7</td>
+        <td>3</td>
+        <td>4</td>
+        <td>42.9</td>
+        <td>809</td>
+        <td>782</td>
+        <td>27</td>
+        <td>45.6</td>
+        <td>33.3</td>
+        <td>71.9</td>
+        <td>40.6</td>
+        <td>27.9</td>
+        <td>13.2</td>
+        <td>9.9</td>
+        <td>4.5</td>
+        <td>100.9</td>
+        <td>111.4</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png" class="team-logo" width="18" height="18" alt="Washington Wizards" loading="lazy"><strong>Washington Wizards</strong></td>
+        <td>7</td>
+        <td>3</td>
+        <td>4</td>
+        <td>42.9</td>
+        <td>775</td>
+        <td>827</td>
+        <td>-52</td>
+        <td>40.4</td>
+        <td>31.4</td>
+        <td>82.6</td>
+        <td>46.9</td>
+        <td>22.0</td>
+        <td>18.0</td>
+        <td>7.1</td>
+        <td>4.6</td>
+        <td>94.5</td>
+        <td>101.2</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvk/a92d4c3b-9f9c-4163-8a10-bcf8fc15893e.png" class="team-logo" width="18" height="18" alt="Virtus Bologna" loading="lazy"><strong>Virtus Bologna</strong></td>
+        <td>12</td>
+        <td>5</td>
+        <td>7</td>
+        <td>41.7</td>
+        <td>1031</td>
+        <td>1077</td>
+        <td>-46</td>
+        <td>44.2</td>
+        <td>31.2</td>
+        <td>78.6</td>
+        <td>39.6</td>
+        <td>17.8</td>
+        <td>12.8</td>
+        <td>6.1</td>
+        <td>3.4</td>
+        <td>75.9</td>
+        <td>113.3</td>
+        <td>118.6</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png" class="team-logo" width="18" height="18" alt="Anadolu Efes Istanbul" loading="lazy"><strong>Anadolu Efes Istanbul</strong></td>
+        <td>12</td>
+        <td>5</td>
+        <td>7</td>
+        <td>41.7</td>
+        <td>1020</td>
+        <td>1042</td>
+        <td>-22</td>
+        <td>45.9</td>
+        <td>35.4</td>
+        <td>81.8</td>
+        <td>34.8</td>
+        <td>20.2</td>
+        <td>12.7</td>
+        <td>6.8</td>
+        <td>2.3</td>
+        <td>75.7</td>
+        <td>112.2</td>
+        <td>114.6</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png" class="team-logo" width="18" height="18" alt="Phoenix Suns" loading="lazy"><strong>Phoenix Suns</strong></td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>40.0</td>
+        <td>559</td>
+        <td>603</td>
+        <td>-44</td>
+        <td>46.4</td>
+        <td>33.5</td>
+        <td>80.2</td>
+        <td>48.2</td>
+        <td>27.8</td>
+        <td>11.7</td>
+        <td>8.3</td>
+        <td>6.9</td>
+        <td>100.6</td>
+        <td>116.1</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/ind.png" class="team-logo" width="18" height="18" alt="Indiana Pacers" loading="lazy"><strong>Indiana Pacers</strong></td>
+        <td>8</td>
+        <td>3</td>
+        <td>5</td>
+        <td>37.5</td>
+        <td>911</td>
+        <td>942</td>
+        <td>-31</td>
+        <td>46.3</td>
+        <td>39.0</td>
+        <td>78.8</td>
+        <td>39.5</td>
+        <td>26.8</td>
+        <td>16.7</td>
+        <td>9.5</td>
+        <td>4.5</td>
+        <td>101.6</td>
+        <td>110.5</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/e33c6d1a-95ca-4dbc-b8cb-0201812104cc.png" class="team-logo" width="18" height="18" alt="LDLC ASVEL Villeurbanne" loading="lazy"><strong>LDLC ASVEL Villeurbanne</strong></td>
+        <td>12</td>
+        <td>4</td>
+        <td>8</td>
+        <td>33.3</td>
+        <td>1055</td>
+        <td>1140</td>
+        <td>-85</td>
+        <td>49.2</td>
+        <td>41.0</td>
+        <td>74.9</td>
+        <td>30.2</td>
+        <td>21.7</td>
+        <td>14.2</td>
+        <td>6.9</td>
+        <td>2.3</td>
+        <td>76.3</td>
+        <td>115.1</td>
+        <td>123.9</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/ny.png" class="team-logo" width="18" height="18" alt="New York Knicks" loading="lazy"><strong>New York Knicks</strong></td>
+        <td>7</td>
+        <td>2</td>
+        <td>5</td>
+        <td>28.6</td>
+        <td>723</td>
+        <td>733</td>
+        <td>-10</td>
+        <td>46.1</td>
+        <td>35.2</td>
+        <td>78.8</td>
+        <td>43.1</td>
+        <td>26.2</td>
+        <td>12.1</td>
+        <td>8.2</td>
+        <td>4.3</td>
+        <td>102.0</td>
+        <td>113.0</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/cha.png" class="team-logo" width="18" height="18" alt="Charlotte Hornets" loading="lazy"><strong>Charlotte Hornets</strong></td>
+        <td>7</td>
+        <td>2</td>
+        <td>5</td>
+        <td>28.6</td>
+        <td>674</td>
+        <td>777</td>
+        <td>-103</td>
+        <td>44.7</td>
+        <td>30.8</td>
+        <td>76.1</td>
+        <td>43.8</td>
+        <td>27.2</td>
+        <td>16.9</td>
+        <td>8.3</td>
+        <td>5.8</td>
+        <td>106.7</td>
+        <td>108.3</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png" class="team-logo" width="18" height="18" alt="Maccabi Rapyd Tel Aviv" loading="lazy"><strong>Maccabi Rapyd Tel Aviv</strong></td>
+        <td>12</td>
+        <td>3</td>
+        <td>9</td>
+        <td>25.0</td>
+        <td>1022</td>
+        <td>1110</td>
+        <td>-88</td>
+        <td>47.3</td>
+        <td>34.2</td>
+        <td>79.0</td>
+        <td>33.7</td>
+        <td>18.9</td>
+        <td>14.2</td>
+        <td>7.4</td>
+        <td>2.9</td>
+        <td>74.1</td>
+        <td>113.3</td>
+        <td>123.2</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.incrowdsports.com/817b0e58-d595-4b09-ab0b-1e7cc26249ff.png" class="team-logo" width="18" height="18" alt="FC Bayern Munich" loading="lazy"><strong>FC Bayern Munich</strong></td>
+        <td>12</td>
+        <td>3</td>
+        <td>9</td>
+        <td>25.0</td>
+        <td>1069</td>
+        <td>1164</td>
+        <td>-95</td>
+        <td>49.6</td>
+        <td>36.7</td>
+        <td>79.8</td>
+        <td>32.5</td>
+        <td>20.1</td>
+        <td>14.2</td>
+        <td>5.8</td>
+        <td>2.3</td>
+        <td>75.3</td>
+        <td>116.5</td>
+        <td>127.4</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/no.png" class="team-logo" width="18" height="18" alt="New Orleans Pelicans" loading="lazy"><strong>New Orleans Pelicans</strong></td>
+        <td>9</td>
+        <td>2</td>
+        <td>7</td>
+        <td>22.2</td>
+        <td>1078</td>
+        <td>1115</td>
+        <td>-37</td>
+        <td>45.1</td>
+        <td>34.0</td>
+        <td>78.4</td>
+        <td>43.2</td>
+        <td>26.4</td>
+        <td>15.8</td>
+        <td>7.5</td>
+        <td>4.1</td>
+        <td>100.6</td>
+        <td>108.6</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png" class="team-logo" width="18" height="18" alt="Armani Olimpia Milan" loading="lazy"><strong>Armani Olimpia Milan</strong></td>
+        <td>12</td>
+        <td>2</td>
+        <td>10</td>
+        <td>16.7</td>
+        <td>985</td>
+        <td>1059</td>
+        <td>-74</td>
+        <td>44.3</td>
+        <td>35.0</td>
+        <td>80.9</td>
+        <td>33.3</td>
+        <td>18.3</td>
+        <td>13.9</td>
+        <td>7.3</td>
+        <td>2.0</td>
+        <td>73.4</td>
+        <td>111.7</td>
+        <td>120.2</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" class="team-logo" width="18" height="18" alt="Brooklyn Nets" loading="lazy"><strong>Brooklyn Nets</strong></td>
+        <td>8</td>
+        <td>1</td>
+        <td>7</td>
+        <td>12.5</td>
+        <td>849</td>
+        <td>954</td>
+        <td>-105</td>
+        <td>46.2</td>
+        <td>33.3</td>
+        <td>81.6</td>
+        <td>42.1</td>
+        <td>24.3</td>
+        <td>15.1</td>
+        <td>9.9</td>
+        <td>5.3</td>
+        <td>103.2</td>
+        <td>111.2</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" class="team-logo" width="18" height="18" alt="Utah Jazz" loading="lazy"><strong>Utah Jazz</strong></td>
+        <td>8</td>
+        <td>1</td>
+        <td>7</td>
+        <td>12.5</td>
+        <td>856</td>
+        <td>948</td>
+        <td>-92</td>
+        <td>47.7</td>
+        <td>39.5</td>
+        <td>84.6</td>
+        <td>47.4</td>
+        <td>28.9</td>
+        <td>15.1</td>
+        <td>6.5</td>
+        <td>5.1</td>
+        <td>102.5</td>
+        <td>118.4</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-euroleague">EuroLeague</span></td>
+        <td><img src="https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png" class="team-logo" width="18" height="18" alt="Kosner Baskonia Vitoria-Gasteiz" loading="lazy"><strong>Kosner Baskonia Vitoria-Gasteiz</strong></td>
+        <td>12</td>
+        <td>1</td>
+        <td>11</td>
+        <td>8.3</td>
+        <td>961</td>
+        <td>1096</td>
+        <td>-135</td>
+        <td>44.5</td>
+        <td>29.2</td>
+        <td>75.4</td>
+        <td>34.3</td>
+        <td>20.1</td>
+        <td>15.2</td>
+        <td>6.5</td>
+        <td>2.3</td>
+        <td>75.5</td>
+        <td>105.7</td>
+        <td>120.3</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" class="team-logo" width="18" height="18" alt="Milwaukee Bucks" loading="lazy"><strong>Milwaukee Bucks</strong></td>
+        <td>8</td>
+        <td>0</td>
+        <td>8</td>
+        <td>0.0</td>
+        <td>877</td>
+        <td>981</td>
+        <td>-104</td>
+        <td>44.7</td>
+        <td>36.2</td>
+        <td>74.8</td>
+        <td>42.2</td>
+        <td>24.3</td>
+        <td>16.2</td>
+        <td>8.5</td>
+        <td>4.9</td>
+        <td>101.9</td>
+        <td>109.7</td>
+        <td>&mdash;</td>
+    </tr>
+    <tr>
+        <td><span class="league-badge league-nba">NBA</span></td>
+        <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png" class="team-logo" width="18" height="18" alt="Sacramento Kings" loading="lazy"><strong>Sacramento Kings</strong></td>
+        <td>9</td>
+        <td>0</td>
+        <td>9</td>
+        <td>0.0</td>
+        <td>980</td>
+        <td>1123</td>
+        <td>-143</td>
+        <td>44.6</td>
+        <td>35.1</td>
+        <td>76.6</td>
+        <td>44.3</td>
+        <td>24.9</td>
+        <td>15.8</td>
+        <td>6.7</td>
+        <td>5.9</td>
+        <td>101.4</td>
+        <td>107.4</td>
+        <td>&mdash;</td>
+    </tr>
+</tbody>
+</table>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>Airball &mdash; basketball data pool. NBA &middot; EuroLeague.</p>
+    </footer>
+
+    <script src="/airball-pages/app.js"></script>
+    <script src="/airball-pages/site.js"></script>
+</body>
+</html>
