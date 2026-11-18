@@ -14,52 +14,26 @@ function staticSortRows(tbody, key, dir) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Standings: tabs switch between the three embedded views.
-    var views = document.querySelectorAll(".standings-view");
-    var tabs = document.querySelectorAll(".standings-tab");
-    var activeView = "overall";
-    if (views.length && tabs.length) {
-        function showView(name) {
-            activeView = name;
-            Array.prototype.forEach.call(views, function(v) {
-                v.style.display = v.getAttribute("data-view") === name ? "" : "none";
-            });
-            Array.prototype.forEach.call(tabs, function(t) {
-                if (t.getAttribute("data-view") === name) {
-                    t.classList.add("sort-active");
-                } else {
-                    t.classList.remove("sort-active");
-                }
-            });
-        }
-        Array.prototype.forEach.call(tabs, function(t) {
-            t.addEventListener("click", function() { showView(t.getAttribute("data-view")); });
-        });
-        showView("overall");
-    }
-
-    // Standings: sort buttons reorder the visible table.
-    var sorts = document.querySelectorAll(".standings-sort");
-    if (sorts.length) {
-        Array.prototype.forEach.call(sorts, function(s) {
-            s.addEventListener("click", function() {
-                var container = document.querySelector('.standings-view[data-view="' + activeView + '"]');
-                if (!container) return;
-                var tbody = container.querySelector("tbody");
-                if (tbody) staticSortRows(tbody, s.getAttribute("data-sort"), s.getAttribute("data-dir"));
-            });
-        });
-    }
-
-    // Scores: team filter.
+    // League filter (Home, Scores, Team Stats, Predictions, Standings):
+    // toggles any element carrying a data-league attribute. Combined with
+    // the scores team filter when both are present.
+    var leagueFilter = document.getElementById("league-filter");
     var teamFilter = document.getElementById("team-filter");
-    if (teamFilter) {
-        teamFilter.addEventListener("change", function() {
-            var v = teamFilter.value;
-            Array.prototype.forEach.call(document.querySelectorAll("tr[data-teams]"), function(tr) {
-                var teams = tr.getAttribute("data-teams").split("|");
-                tr.style.display = (v === "All" || teams.indexOf(v) !== -1) ? "" : "none";
-            });
+
+    function applyFilters() {
+        var league = leagueFilter ? leagueFilter.value : "All";
+        var team = teamFilter ? teamFilter.value : "All";
+        Array.prototype.forEach.call(document.querySelectorAll("[data-league]"), function(el) {
+            var showLeague = league === "All" || el.getAttribute("data-league") === league;
+            var showTeam = true;
+            if (teamFilter && el.hasAttribute("data-teams")) {
+                var teams = el.getAttribute("data-teams").split("|");
+                showTeam = team === "All" || teams.indexOf(team) !== -1;
+            }
+            el.style.display = (showLeague && showTeam) ? "" : "none";
         });
     }
+
+    if (leagueFilter) leagueFilter.addEventListener("change", applyFilters);
+    if (teamFilter) teamFilter.addEventListener("change", applyFilters);
 });

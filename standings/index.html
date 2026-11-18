@@ -31,10 +31,13 @@
 
 <div class="top-controls">
     
+    <label>League: <select id="league-filter"><option value="All">All</option><option value="NBA">NBA</option><option value="EUROLEAGUE">EuroLeague</option></select></label>
+    
 </div>
 
 <hr>
 
+<div data-league="NBA">
 <h2>NBA</h2>
 <table class="games-table">
 <thead>
@@ -445,7 +448,9 @@
     </tr>
 </tbody>
 </table>
+</div>
 <hr>
+<div data-league="EUROLEAGUE">
 <h2>EuroLeague</h2>
 <table class="games-table">
 <thead>
@@ -726,6 +731,7 @@
     </tr>
 </tbody>
 </table>
+</div>
 <hr>
 
     </main>

@@ -31,6 +31,8 @@
 
 <div class="top-controls">
     
+    <label>League: <select id="league-filter"><option value="All">All</option><option value="NBA">NBA</option><option value="EUROLEAGUE">EuroLeague</option></select></label>
+    
 </div>
 
 <hr>
@@ -61,7 +63,7 @@
     </tr>
 </thead>
 <tbody>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" class="team-logo" width="18" height="18" alt="Los Angeles Lakers" loading="lazy"><strong>Los Angeles Lakers</strong></td>
         <td>8</td>
@@ -83,7 +85,7 @@
         <td>114.4</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/mem.png" class="team-logo" width="18" height="18" alt="Memphis Grizzlies" loading="lazy"><strong>Memphis Grizzlies</strong></td>
         <td>8</td>
@@ -105,7 +107,7 @@
         <td>105.5</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" class="team-logo" width="18" height="18" alt="Boston Celtics" loading="lazy"><strong>Boston Celtics</strong></td>
         <td>7</td>
@@ -127,7 +129,7 @@
         <td>116.9</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/den.png" class="team-logo" width="18" height="18" alt="Denver Nuggets" loading="lazy"><strong>Denver Nuggets</strong></td>
         <td>5</td>
@@ -149,7 +151,7 @@
         <td>114.5</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/phi.png" class="team-logo" width="18" height="18" alt="Philadelphia 76ers" loading="lazy"><strong>Philadelphia 76ers</strong></td>
         <td>9</td>
@@ -171,7 +173,7 @@
         <td>105.0</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png" class="team-logo" width="18" height="18" alt="Olympiacos Piraeus" loading="lazy"><strong>Olympiacos Piraeus</strong></td>
         <td>12</td>
@@ -193,7 +195,7 @@
         <td>118.9</td>
         <td>109.1</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png" class="team-logo" width="18" height="18" alt="Valencia Basket" loading="lazy"><strong>Valencia Basket</strong></td>
         <td>12</td>
@@ -215,7 +217,7 @@
         <td>123.3</td>
         <td>113.1</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/hou.png" class="team-logo" width="18" height="18" alt="Houston Rockets" loading="lazy"><strong>Houston Rockets</strong></td>
         <td>8</td>
@@ -237,7 +239,7 @@
         <td>110.4</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" class="team-logo" width="18" height="18" alt="Minnesota Timberwolves" loading="lazy"><strong>Minnesota Timberwolves</strong></td>
         <td>8</td>
@@ -259,7 +261,7 @@
         <td>112.3</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/okc.png" class="team-logo" width="18" height="18" alt="Oklahoma City Thunder" loading="lazy"><strong>Oklahoma City Thunder</strong></td>
         <td>8</td>
@@ -281,7 +283,7 @@
         <td>112.9</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/sa.png" class="team-logo" width="18" height="18" alt="San Antonio Spurs" loading="lazy"><strong>San Antonio Spurs</strong></td>
         <td>8</td>
@@ -303,7 +305,7 @@
         <td>109.6</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/1efae090-16e2-4963-ae47-4b94f249c244.png" class="team-logo" width="18" height="18" alt="Dubai Basketball" loading="lazy"><strong>Dubai Basketball</strong></td>
         <td>12</td>
@@ -325,7 +327,7 @@
         <td>118.9</td>
         <td>117.9</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png" class="team-logo" width="18" height="18" alt="Zalgiris Kaunas" loading="lazy"><strong>Zalgiris Kaunas</strong></td>
         <td>12</td>
@@ -347,7 +349,7 @@
         <td>117.1</td>
         <td>113.2</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/atl.png" class="team-logo" width="18" height="18" alt="Atlanta Hawks" loading="lazy"><strong>Atlanta Hawks</strong></td>
         <td>9</td>
@@ -369,7 +371,7 @@
         <td>110.7</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/det.png" class="team-logo" width="18" height="18" alt="Detroit Pistons" loading="lazy"><strong>Detroit Pistons</strong></td>
         <td>6</td>
@@ -391,7 +393,7 @@
         <td>114.7</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png" class="team-logo" width="18" height="18" alt="Panathinaikos AKTOR Athens" loading="lazy"><strong>Panathinaikos AKTOR Athens</strong></td>
         <td>12</td>
@@ -413,7 +415,7 @@
         <td>115.2</td>
         <td>106.0</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png" class="team-logo" width="18" height="18" alt="Fenerbahce Tarfin Istanbul" loading="lazy"><strong>Fenerbahce Tarfin Istanbul</strong></td>
         <td>12</td>
@@ -435,7 +437,7 @@
         <td>115.8</td>
         <td>106.5</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png" class="team-logo" width="18" height="18" alt="FC Barcelona" loading="lazy"><strong>FC Barcelona</strong></td>
         <td>12</td>
@@ -457,7 +459,7 @@
         <td>119.1</td>
         <td>116.7</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png" class="team-logo" width="18" height="18" alt="Crvena Zvezda Meridianbet Belgrade" loading="lazy"><strong>Crvena Zvezda Meridianbet Belgrade</strong></td>
         <td>12</td>
@@ -479,7 +481,7 @@
         <td>112.8</td>
         <td>107.4</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png" class="team-logo" width="18" height="18" alt="Hapoel IBI Tel Aviv" loading="lazy"><strong>Hapoel IBI Tel Aviv</strong></td>
         <td>12</td>
@@ -501,7 +503,7 @@
         <td>120.6</td>
         <td>116.5</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png" class="team-logo" width="18" height="18" alt="Real Madrid" loading="lazy"><strong>Real Madrid</strong></td>
         <td>12</td>
@@ -523,7 +525,7 @@
         <td>125.2</td>
         <td>115.7</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/por.png" class="team-logo" width="18" height="18" alt="Portland Trail Blazers" loading="lazy"><strong>Portland Trail Blazers</strong></td>
         <td>7</td>
@@ -545,7 +547,7 @@
         <td>110.8</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/mia.png" class="team-logo" width="18" height="18" alt="Miami Heat" loading="lazy"><strong>Miami Heat</strong></td>
         <td>7</td>
@@ -567,7 +569,7 @@
         <td>113.0</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" class="team-logo" width="18" height="18" alt="Dallas Mavericks" loading="lazy"><strong>Dallas Mavericks</strong></td>
         <td>8</td>
@@ -589,7 +591,7 @@
         <td>114.9</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/cle.png" class="team-logo" width="18" height="18" alt="Cleveland Cavaliers" loading="lazy"><strong>Cleveland Cavaliers</strong></td>
         <td>8</td>
@@ -611,7 +613,7 @@
         <td>110.9</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png" class="team-logo" width="18" height="18" alt="LA Clippers" loading="lazy"><strong>LA Clippers</strong></td>
         <td>8</td>
@@ -633,7 +635,7 @@
         <td>120.6</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/b05e3c54-e672-4b31-9f86-c91e9de7715c.png" class="team-logo" width="18" height="18" alt="Besiktas Istanbul" loading="lazy"><strong>Besiktas Istanbul</strong></td>
         <td>12</td>
@@ -655,7 +657,7 @@
         <td>116.3</td>
         <td>118.9</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/a033e5b3-0de7-48a3-98d9-d9a4b9df1f39.png" class="team-logo" width="18" height="18" alt="Paris Basketball" loading="lazy"><strong>Paris Basketball</strong></td>
         <td>12</td>
@@ -677,7 +679,7 @@
         <td>115.7</td>
         <td>119.1</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png" class="team-logo" width="18" height="18" alt="Partizan Mozzart Bet Belgrade" loading="lazy"><strong>Partizan Mozzart Bet Belgrade</strong></td>
         <td>12</td>
@@ -699,7 +701,7 @@
         <td>108.1</td>
         <td>107.3</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/orl.png" class="team-logo" width="18" height="18" alt="Orlando Magic" loading="lazy"><strong>Orlando Magic</strong></td>
         <td>7</td>
@@ -721,7 +723,7 @@
         <td>114.4</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png" class="team-logo" width="18" height="18" alt="Golden State Warriors" loading="lazy"><strong>Golden State Warriors</strong></td>
         <td>7</td>
@@ -743,7 +745,7 @@
         <td>119.9</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" class="team-logo" width="18" height="18" alt="Chicago Bulls" loading="lazy"><strong>Chicago Bulls</strong></td>
         <td>7</td>
@@ -765,7 +767,7 @@
         <td>115.9</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/tor.png" class="team-logo" width="18" height="18" alt="Toronto Raptors" loading="lazy"><strong>Toronto Raptors</strong></td>
         <td>7</td>
@@ -787,7 +789,7 @@
         <td>111.4</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png" class="team-logo" width="18" height="18" alt="Washington Wizards" loading="lazy"><strong>Washington Wizards</strong></td>
         <td>7</td>
@@ -809,7 +811,7 @@
         <td>101.2</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvk/a92d4c3b-9f9c-4163-8a10-bcf8fc15893e.png" class="team-logo" width="18" height="18" alt="Virtus Bologna" loading="lazy"><strong>Virtus Bologna</strong></td>
         <td>12</td>
@@ -831,7 +833,7 @@
         <td>113.3</td>
         <td>118.6</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png" class="team-logo" width="18" height="18" alt="Anadolu Efes Istanbul" loading="lazy"><strong>Anadolu Efes Istanbul</strong></td>
         <td>12</td>
@@ -853,7 +855,7 @@
         <td>112.2</td>
         <td>114.6</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png" class="team-logo" width="18" height="18" alt="Phoenix Suns" loading="lazy"><strong>Phoenix Suns</strong></td>
         <td>5</td>
@@ -875,7 +877,7 @@
         <td>116.1</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/ind.png" class="team-logo" width="18" height="18" alt="Indiana Pacers" loading="lazy"><strong>Indiana Pacers</strong></td>
         <td>8</td>
@@ -897,7 +899,7 @@
         <td>110.5</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/e33c6d1a-95ca-4dbc-b8cb-0201812104cc.png" class="team-logo" width="18" height="18" alt="LDLC ASVEL Villeurbanne" loading="lazy"><strong>LDLC ASVEL Villeurbanne</strong></td>
         <td>12</td>
@@ -919,7 +921,7 @@
         <td>115.1</td>
         <td>123.9</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/ny.png" class="team-logo" width="18" height="18" alt="New York Knicks" loading="lazy"><strong>New York Knicks</strong></td>
         <td>7</td>
@@ -941,7 +943,7 @@
         <td>113.0</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/cha.png" class="team-logo" width="18" height="18" alt="Charlotte Hornets" loading="lazy"><strong>Charlotte Hornets</strong></td>
         <td>7</td>
@@ -963,7 +965,7 @@
         <td>108.3</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png" class="team-logo" width="18" height="18" alt="Maccabi Rapyd Tel Aviv" loading="lazy"><strong>Maccabi Rapyd Tel Aviv</strong></td>
         <td>12</td>
@@ -985,7 +987,7 @@
         <td>113.3</td>
         <td>123.2</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.incrowdsports.com/817b0e58-d595-4b09-ab0b-1e7cc26249ff.png" class="team-logo" width="18" height="18" alt="FC Bayern Munich" loading="lazy"><strong>FC Bayern Munich</strong></td>
         <td>12</td>
@@ -1007,7 +1009,7 @@
         <td>116.5</td>
         <td>127.4</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/no.png" class="team-logo" width="18" height="18" alt="New Orleans Pelicans" loading="lazy"><strong>New Orleans Pelicans</strong></td>
         <td>9</td>
@@ -1029,7 +1031,7 @@
         <td>108.6</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png" class="team-logo" width="18" height="18" alt="Armani Olimpia Milan" loading="lazy"><strong>Armani Olimpia Milan</strong></td>
         <td>12</td>
@@ -1051,7 +1053,7 @@
         <td>111.7</td>
         <td>120.2</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" class="team-logo" width="18" height="18" alt="Brooklyn Nets" loading="lazy"><strong>Brooklyn Nets</strong></td>
         <td>8</td>
@@ -1073,7 +1075,7 @@
         <td>111.2</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" class="team-logo" width="18" height="18" alt="Utah Jazz" loading="lazy"><strong>Utah Jazz</strong></td>
         <td>8</td>
@@ -1095,7 +1097,7 @@
         <td>118.4</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="EUROLEAGUE">
         <td><span class="league-badge league-euroleague">EuroLeague</span></td>
         <td><img src="https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png" class="team-logo" width="18" height="18" alt="Kosner Baskonia Vitoria-Gasteiz" loading="lazy"><strong>Kosner Baskonia Vitoria-Gasteiz</strong></td>
         <td>12</td>
@@ -1117,7 +1119,7 @@
         <td>105.7</td>
         <td>120.3</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" class="team-logo" width="18" height="18" alt="Milwaukee Bucks" loading="lazy"><strong>Milwaukee Bucks</strong></td>
         <td>8</td>
@@ -1139,7 +1141,7 @@
         <td>109.7</td>
         <td>&mdash;</td>
     </tr>
-    <tr>
+    <tr data-league="NBA">
         <td><span class="league-badge league-nba">NBA</span></td>
         <td><img src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png" class="team-logo" width="18" height="18" alt="Sacramento Kings" loading="lazy"><strong>Sacramento Kings</strong></td>
         <td>9</td>
